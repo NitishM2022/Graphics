@@ -5,7 +5,6 @@
 *.slo
 *.lo
 *.o
-*.obj
 
 # Precompiled Headers
 *.gch
@@ -30,3 +29,15 @@
 *.exe
 *.out
 *.app
+
+# Trash
+.vscode
+.DS_Store
+
+# Misc.
+/932007196
+/L*[0-9]*
+/Libraries
+/Midterm
+*.zip
+*/build

@@ -1,0 +1,36 @@
+#ifndef RAY_TRIANGLE_INTERSECTION_H
+#define RAY_TRIANGLE_INTERSECTION_H
+
+#include <math.h>
+
+#define EPSILON 0.000001
+
+#define CROSS(dest,v1,v2) \
+          dest[0]=v1[1]*v2[2]-v1[2]*v2[1]; \
+          dest[1]=v1[2]*v2[0]-v1[0]*v2[2]; \
+          dest[2]=v1[0]*v2[1]-v1[1]*v2[0];
+
+#define DOT(v1,v2) (v1[0]*v2[0]+v1[1]*v2[1]+v1[2]*v2[2])
+
+#define SUB(dest,v1,v2) \
+          dest[0]=v1[0]-v2[0]; \
+          dest[1]=v1[1]-v2[1]; \
+          dest[2]=v1[2]-v2[2];
+
+int intersect_triangle(double orig[3], double dir[3],
+                       double vert0[3], double vert1[3], double vert2[3],
+                       double *t, double *u, double *v);
+
+int intersect_triangle1(double orig[3], double dir[3],
+                        double vert0[3], double vert1[3], double vert2[3],
+                        double *t, double *u, double *v);
+
+int intersect_triangle2(double orig[3], double dir[3],
+                        double vert0[3], double vert1[3], double vert2[3],
+                        double *t, double *u, double *v);
+
+int intersect_triangle3(double orig[3], double dir[3],
+                        double vert0[3], double vert1[3], double vert2[3],
+                        double *t, double *u, double *v);
+
+#endif /* RAY_TRIANGLE_INTERSECTION_H */
