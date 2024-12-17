@@ -23,9 +23,9 @@
 
 4. To run the program use
 
-```
-./A6 <SCENE> <IMAGE SIZE> <IMAGE FILENAME>
-```
+   ```
+   ./A6 <SCENE> <IMAGE SIZE> <IMAGE FILENAME>
+   ```
 
 **Images:**
 
