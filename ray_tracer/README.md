@@ -1,26 +1,35 @@
 # Ray Tracer
 
-**How to Build:**
+**Build Steps:**
 
-```
-> mkdir build
-> cd build
-```
+1. Create a build directory and navigate into it:
 
-Then run the following from the build folder.
+   ```
+   > mkdir build
+   > cd build
+   ```
 
-```
-cmake ..
-```
+2. Run CMake to configure the project:
 
-To compile the code, run the generated Makefile.
+   ```
+   cmake ..
+   ```
 
-```
-make -j4
-```
+3. Compile the code using the generated Makefile:
 
-To run
+   ```
+   make -j4
+   ```
+
+4. To run the program use
 
 ```
 ./A6 <SCENE> <IMAGE SIZE> <IMAGE FILENAME>
 ```
+
+**Images:**
+![Scene 1 & 2](images/1.png)
+![Scene 3](images/3.png)
+![Scene 4 & 5](images/4.png)
+![Scene 6](images/6.png)
+![Scene 7](images/7.png)
